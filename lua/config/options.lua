@@ -17,7 +17,6 @@ vim.opt.colorcolumn = "120"
 vim.opt.textwidth = 120
 vim.opt.scrollbind = false
 vim.opt.wildmenu = true
-vim.opt.termguicolors = true
 
 -- Set tab width and indentation
 vim.opt.tabstop = 4
