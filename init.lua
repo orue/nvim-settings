@@ -26,7 +26,17 @@ local plugins = {
     tag = '0.1.6',
     dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" }
+  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    }
+
+  }
 }
 
 local opts = {}
@@ -50,6 +60,24 @@ config.setup({
   auto_install = true
 })
 
+require("neo-tree").setup({
+  event_handlers = {
+
+    {
+      event = "file_opened",
+      handler = function(file_path)
+        -- auto close
+        -- vimc.cmd("Neotree close")
+        -- OR
+        require("neo-tree.command").execute({ action = "close" })
+      end
+    },
+
+  }
+})
+
+--keymap for Neotree
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal right<CR>')
 
 --require catppuccin
 require("catppuccin").setup({
