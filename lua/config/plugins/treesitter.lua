@@ -6,7 +6,7 @@ return {
       local config = require("nvim-treesitter.configs")
       config.setup({
         ensure_installed = {
-          "dockerfile", "gitignore", "go", "gomod", "gosum",
+          "astro", "dockerfile", "gitignore", "go", "gomod", "gosum",
           "gowork", "javascript", "json", "lua", "markdown", "proto",
           "python", "sql", "vue", "yaml", "html", "css", "typescript"
         },
