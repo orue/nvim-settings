@@ -14,7 +14,7 @@ return {
 
       config.setup({
         ensure_installed = {
-          "astro", "dockerfile", "gitignore", "go", "gomod", "gosum",
+          "astro", "bash", "dockerfile", "gitignore", "go", "gomod", "gosum",
           "gowork", "javascript", "json", "lua", "markdown", "proto",
           "python", "sql", "vue", "yaml", "html", "css", "typescript"
         },
