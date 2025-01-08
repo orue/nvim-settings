@@ -1,32 +1,35 @@
-vim.opt.encoding = "utf-8"
+local opt = vim.opt
+
+
+opt.encoding = "utf-8"
 
 -- Enable line numbers and relative line numbers
-vim.opt.number = true
+opt.number = true
 -- vim.opt.relativenumber = true
 
-vim.opt.compatible = false
+opt.compatible = false
 
-vim.opt.hlsearch = true
-vim.opt.laststatus = 2
-vim.opt.vb = true
-vim.opt.ruler = true
-vim.opt.spell = true
-vim.opt.spelllang = "en_us"
-vim.opt.autoindent = true
-vim.opt.colorcolumn = "120"
-vim.opt.textwidth = 120
-vim.opt.scrollbind = false
-vim.opt.wildmenu = true
+opt.hlsearch = true
+opt.laststatus = 2
+opt.vb = true
+opt.ruler = true
+opt.spell = true
+opt.spelllang = "en_us"
+opt.autoindent = true
+opt.colorcolumn = "120"
+opt.textwidth = 120
+opt.scrollbind = false
+opt.wildmenu = true
 
 -- Set tab width and indentation
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = true
 
 
 
 -- Enable mouse support
-vim.opt.mouse = 'a'
+opt.mouse = 'a'
 
 -- Set clipboard to use system clipboard
-vim.opt.clipboard = 'unnamedplus'
+opt.clipboard = 'unnamedplus'
