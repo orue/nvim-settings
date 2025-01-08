@@ -20,8 +20,22 @@ return {
       require("telescope").setup({
         defaults = {
           sorting_strategy = "ascending",
-          layout_strategy = "horizontal",
-          layout_config = { prompt_position = "top" },
+          winblend = 0,
+          preview_cutoff = 120,
+          layout_strategy = "flex",
+          layout_config = {
+            prompt_position = "top",
+            horizontal = {
+              preview_width = 0.6,
+              width = 0.9,
+              height = 0.9,
+            },
+            vertical = {
+              preview_height = 0.5,
+            },
+            height = { padding = 0.1 },
+          },
+          -- layout_strategy = "horizontal",
         },
 
         extensions = {
