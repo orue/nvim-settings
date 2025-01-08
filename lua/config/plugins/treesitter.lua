@@ -19,10 +19,21 @@ return {
           "python", "sql", "vue", "yaml", "html", "css", "typescript"
         },
         sync_install = false,
-        highlight = { enable = true },
-        indent = { enable = true, disable = { "yaml" } },
+        highlight = {
+          enable = true,
+          disable = { "csv" } -- preferring chrisbra/csv.vim
+        },
+        indent = {
+          enable = true,
+          disable = { "yaml" }
+        },
         auto_install = true,
-        textobjects = { select = { enable = true, lookahead = true } }
+        textobjects = {
+          select = {
+            enable = true,
+            lookahead = true
+          }
+        }
       })
     end
   }
