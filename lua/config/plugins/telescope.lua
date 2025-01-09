@@ -71,7 +71,7 @@ return {
       vim.keymap.set("n", "-", ":Telescope file_browser<CR>")         -- Open the file browser
       vim.keymap.set("n", "<leader>ff", builtin.find_files, opts)     -- Lists files in your current working directory, respects .gitignore
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, opts)      -- Grep for a string in your current working directory
-      vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, opts) -- Open a list of your recently opened files
+      vim.keymap.set("n", "<leader><leader>", builtin.buffers, opts) -- Open a list of your recently opened files
     end
   },
 }
