@@ -14,8 +14,8 @@ return {
 
       config.setup({
         ensure_installed = {
-          "astro", "bash", "dockerfile", "gitignore", "go", "gomod", "gosum",
-          "gowork", "javascript", "json", "lua", "markdown", "proto",
+          "astro", "bash", "dockerfile", "c", "cpp", "gitignore", "git_config", "go", "gomod", "gosum",
+          "gowork", "javascript", "json", "lua", "markdown", "markdown_inline", "proto",
           "python", "sql", "vue", "yaml", "html", "css", "typescript"
         },
         sync_install = false,
