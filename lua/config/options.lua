@@ -8,7 +8,7 @@ opt.fileencoding = "utf-8"
 
 -- Enable line numbers and relative line numbers
 opt.number = true
--- vim.opt.relativenumber = true
+opt.relativenumber = true
 
 opt.compatible = false
 
