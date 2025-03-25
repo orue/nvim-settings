@@ -2,8 +2,8 @@
 
 ## Plugins
 
-- [X] lazy.nvim                             -- Plugin Manager
-- [ ] kanagawa.nvim                         -- Color Scheme [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
+- [X] lazy.nvim                             -- Plugin Manager [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [X] kanagawa.nvim                         -- Color Scheme [kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
 - [ ] lualine.vim                           -- status line [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [ ] oil.nvim                              -- Easy file navegation [oil.nvom](https://github.com/stevearc/oil.nvim)
 - [ ] Basic options                         -- nvim options
