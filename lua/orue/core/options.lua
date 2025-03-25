@@ -40,11 +40,8 @@ opt.signcolumn = "yes"
 opt.splitright = true
 opt.splitbelow = true
 
--- Sets how neovim will display certain whitespace characters in the editor.
---  See `:help 'list'`
---  and `:help 'listchars'`
-opt.list = true
-opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-
 -- Minimal number of screen lines to keep above and below the cursor.
 opt.scrolloff = 5
+
+opt.title = true
+opt.titlestring = '%t%( %M%)%( (%{expand("%:~:h")})%)%a (nvim)'
