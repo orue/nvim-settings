@@ -1,4 +1,4 @@
-# My Neovim Configuration
+# Orue's config
 
 ## Plugins
 

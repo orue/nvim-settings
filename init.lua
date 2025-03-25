@@ -1,1 +1,2 @@
-require("config.lazy")
+require("orue.core")
+require("orue.lazy")
