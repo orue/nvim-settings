@@ -3,8 +3,8 @@ return {
     priority = 1000,
     config=function()
         require('kanagawa').setup({
-             compile = true,             -- enable compiling the colorscheme
-             transparent = true,         -- do not set background color
+            compile = true,             -- enable compiling the colorscheme
+            transparent = true,         -- do not set background color
             overrides=function(colors)
                 return {
                     ["@markup.link.url.markdown_inline"] = { link = "Special" }, -- (url)
