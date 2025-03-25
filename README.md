@@ -1,5 +1,11 @@
 # Orue's config
 
+## Install
+
+```sh
+git clone git@github.com:orue/config.nvim.git ~/.config/nvim
+```
+
 ## Plugins
 
 - [X] lazy.nvim                             -- Plugin Manager [lazy.nvim](https://github.com/folke/lazy.nvim)
@@ -20,4 +26,3 @@
 - [ ] blink-cmp
 - [ ] snacks.indent
 
-[orue](https://orue.io)
