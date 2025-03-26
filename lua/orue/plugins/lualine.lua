@@ -14,10 +14,10 @@ return {
 	lualine_a = {
 	  { "mode", separator = { left = "" }, right_padding = 2 },
 	},
-	lualine_b = { "filename", "branch" },
-	lualine_c = {},
-	lualine_x = {},
-	lualine_y = { "filetype", "progress" },
+	lualine_b = { "branch","diff", "diagnostics"  },
+	lualine_c = {{ "filename", path = 1 } },
+	lualine_x = {"fileformat", "filetype"},
+	lualine_y = { "progress" },
 	lualine_z = {
 	  { "location", separator = { right = "" }, left_padding = 2 },
 	},
