@@ -1,47 +1,41 @@
 local opt = vim.opt
 
-
-opt.expandtab = true -- Convert tabs to spaces
-opt.shiftwidth = 2   -- Amount to indent with << and >>
-opt.tabstop = 2      -- How many spaces are shown per Tab
-opt.softtabstop = 2  -- How many spaces are applied when pressing Tab
-
-opt.smarttab = true
-opt.smartindent = true
-opt.autoindent = true -- Keep identation from previous line
-
--- Enable break indent
-opt.breakindent = true
-
--- Always show relative line numbers
-opt.number = true
+-- line numbers
 opt.relativenumber = true
+opt.number = true
 
--- Show line under cursor
-opt.cursorline = true
+-- tabs & indentation
+opt.tabstop = 2 -- 2 spaces for tabs
+opt.shiftwidth = 2 -- 2 spaces for indent width
+opt.expandtab = true -- expand tab to spaces
+opt.autoindent = true -- copy indent from current line when starting new one
 
--- Store undos between sessions
-opt.undofile = true
-
--- Enable mouse mode, can be useful for resizing splits for example!
-opt.mouse = "a"
-
--- Don't show the mode, since it's already in the status line
-opt.showmode = false
+-- line wrapping
+opt.wrap = false -- disable line wrapping
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 opt.ignorecase = true
 opt.smartcase = true
 
--- Keep signcolumn on by default
-opt.signcolumn = "yes"
+-- cursor line
+opt.cursorline = true -- highlight the current cursor line
 
--- Configure how new splits should be opened
-opt.splitright = true
-opt.splitbelow = true
+-- appearance
 
--- Minimal number of screen lines to keep above and below the cursor.
-opt.scrolloff = 5
+-- turn on termguicolors for nightfly colorscheme to work
+opt.termguicolors = true
+opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
-opt.title = true
-opt.titlestring = '%t%( %M%)%( (%{expand("%:~:h")})%)%a (nvim)'
+-- backspace
+opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
+
+-- clipboard
+opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+
+-- split windows
+opt.splitright = true -- split vertical window to the right
+opt.splitbelow = true -- split horizontal window to the bottom
+
+-- turn off swapfile
+opt.swapfile = false
