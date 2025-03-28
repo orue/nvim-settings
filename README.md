@@ -25,3 +25,4 @@ git clone git@github.com:orue/config.nvim.git ~/.config/nvim
 - [ ] conform.nvim
 - [ ] blink-cmp
 - [ ] snacks.indent
+
