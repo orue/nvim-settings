@@ -1,6 +1,6 @@
 # Orue's config
 
-## Install
+## To install clone this repository
 
 ```sh
 git clone git@github.com:orue/config.nvim.git ~/.config/nvim
@@ -19,6 +19,7 @@ git clone git@github.com:orue/config.nvim.git ~/.config/nvim
     - [X] nvim-treesitter-context           -- [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
 - [X] which-key                             -- Display Keymap [which-key.nvim](https://github.com/folke/which-key.nvim)
 - [ ] fzflua
+- [X] telescope                             -- Fuzzy finder
 - [ ] preject.nvim                          -- Control Nvim top project directory
 - [ ] LSP                                   -- Language Server Protocole
 - [ ] Mason
