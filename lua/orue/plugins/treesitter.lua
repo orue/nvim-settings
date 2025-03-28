@@ -11,6 +11,14 @@ return {
     config = function () 
         local configs = require("nvim-treesitter.configs")
 
+        vim.api.nvim_create_autocmd("FileType", {
+            pattern = {"markdown"},
+            callback = function(ev)
+                -- treesitter-context is buggy with Markdown files
+                require("treesitter-context").disable()
+            end
+        })
+
         configs.setup({
             ensure_installed = {
                 "lua",
@@ -66,6 +74,7 @@ return {
                     node_decremental = "<Backspace>",
                 },
             },
+            textobjects = {select = {enable = true, lookahead = true}}
         })
     end
 }
